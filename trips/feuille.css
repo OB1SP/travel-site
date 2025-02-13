@@ -145,6 +145,9 @@ section {
     transform: translate(-50%, -50%);
 }
 
+hr {width: 91%; margin: 10px;}
+
+
 /* btn close*/
 .close {
     position: absolute;
