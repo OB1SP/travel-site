@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservez votre Voyage en Allemagne | OBtravel</title>
+    <link rel="stylesheet" href="feuille.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="../index.html">
+            <h1>OBtravel</h1>
+        </a>
+        <nav class="center" style="width: 100%;">
+            <li><a href="/index.html#offres">Nos offres</a></li>
+            <li><a href="/index.html#avis">Avis</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+        </nav>
+
+        <a href="reservation.html" class="reservation">Réserver</a>
+
+    </header>
+
+    <section id="intro">
+        <h2>Découvrez l'Allemagne</h2>
+        <div class="center pres" style="display: flex block;">
+            <img src="../trips/img/allemagne-4.jpg" width="750" height="530" alt="Haïti" onclick="afficherGrandeImage(this)">
+            
+            <div class="small-img">
+                <img src="../trips/img/allemagne-2.jpg" width="450" height="250" alt="Haïti" onclick="afficherGrandeImage(this)">
+                <img src="../trips/img/allemagne-3.jpg" width="450" height="250" alt="Haïti" onclick="afficherGrandeImage(this)">
+            </div>
+        </div>      
+        
+
+        <div id="modal" class="modal" onclick="fermerModal()">
+            <span class="close" onclick="fermerModal()">x</span>
+            <img class="modal-content" id="imgModal">
+        </div>
+
+        <div style="margin: 20px; margin-left: 130px;">
+            <p style="font-size: 25px;">Voyage dans 3 ville, 3 villas | 7600 €</p>
+            <div style="display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display: block; height: 16px; width: 16px; fill: currentcolor;       " aria-hidden="true" role="presentation" focusable="false"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display: block; height: 16px; width: 16px; fill: currentcolor;       " aria-hidden="true" role="presentation" focusable="false"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display: block; height: 16px; width: 16px; fill: currentcolor;       " aria-hidden="true" role="presentation" focusable="false"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="display: block; height: 16px; width: 16px; fill: currentcolor;       " aria-hidden="true" role="presentation" focusable="false"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg> 
+            
+            </div>
+
+            <div style="width: 1000px;">
+                <p>L'Allemagne vous invite à découvrir ses châteaux majestueux, ses forêts enchantées et ses villes dynamiques comme Berlin. Entre tradition et modernité, vivez une expérience unique à travers son histoire, sa culture et ses festivals.</p>
+                
+            </div>
+            <hr / width="55%" style="margin: 20px 0px;">
+
+        </div>
+
+        
+
+    </section>
+
+    <section id="offres">
+        <h2>Nos Offres Spéciales</h2>
+        <div class="offer">
+            <div class="offer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="offer-icon">
+                    <path d="M17 6a2 2 0 0 1 2 1.85v8.91l.24.24H24v-3h-3a1 1 0 0 1-.98-1.2l.03-.12 2-6a1 1 0 0 1 .83-.67L23 6h4a1 1 0 0 1 .9.58l.05.1 2 6a1 1 0 0 1-.83 1.31L29 14h-3v3h5a1 1 0 0 1 1 .88V30h-2v-3H20v3h-2v-3H2v3H0V19a3 3 0 0 1 1-2.24V8a2 2 0 0 1 1.85-2H3zm13 13H20v6h10zm-13-1H3a1 1 0 0 0-1 .88V25h16v-6a1 1 0 0 0-.77-.97l-.11-.02zm8 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM17 8H3v8h2v-3a2 2 0 0 1 1.85-2H13a2 2 0 0 1 2 1.85V16h2zm-4 5H7v3h6zm13.28-5h-2.56l-1.33 4h5.22z"></path>
+                </svg>
+                <h3>Châteaux et forêts</h3>
+                <p>Partez à la découverte des châteaux féériques et des forêts bavaroises.</p>
+            </div>
+
+            <div class="offer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="offer-icon">
+                    <path d="M24.33 1.67a2 2 0 0 1 2 1.85v24.81h3v2H2.67v-2h3V3.67a2 2 0 0 1 1.85-2h.15zm-4 2H7.67v24.66h12.66zm4 0h-2v24.66h2zm-7 11a1.33 1.33 0 1 1 0 2.66 1.33 1.33 0 0 1 0-2.66z"></path>
+                </svg>
+                <h3>Séjour urbain à Berlin</h3>
+                <p>Plongez dans l'histoire et la modernité de la capitale allemande.</p>
+            </div>
+
+            <div class="offer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="offer-icon">
+                    <path d="M11.67 0v1.67h8.66V0h2v1.67h6a2 2 0 0 1 2 1.85v16.07a2 2 0 0 1-.46 1.28l-.12.13L21 29.75a2 2 0 0 1-1.24.58H6.67a5 5 0 0 1-5-4.78V3.67a2 2 0 0 1 1.85-2h6.15V0zm16.66 11.67H3.67v13.66a3 3 0 0 0 2.82 3h11.18v-5.66a5 5 0 0 1 4.78-5h5.88zm-.08 8h-5.58a3 3 0 0 0-3 2.82v5.76zm-18.58-16h-6v6h24.66v-6h-6v1.66h-2V3.67h-8.66v1.66h-2z"></path>
+                </svg>
+                <h3>Festival de musique</h3>
+                <p>Assistez à des festivals et événements culturels à travers toute l'Allemagne.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-sec about">
+            <h3>À Propos d'OBtravel</h3>
+            <p>OBtravel est votre partenaire de confiance pour des voyages inoubliables.</p>
+            <p>Nous vous offrons des expériences authentiques et personnalisées pour explorer les merveilles des meilleures destinations.</p>
+        </div>
+
+        <div class="footer-sec info">
+            <h3>Contactez-Nous</h3>
+            <p>Email: contact@obtravel.com</p>
+            <p>Téléphone: +356 79 123 456</p>
+            <p>Adresse: 45 Triq il-Kbira, Valletta, Malte</p>
+        </div>
+
+        <hr style="width:100%; margin: 10px;">
+
+        <div class="conformite">
+            <a href="">Mentions légales</a>
+            <a href="">Politique de confidentialité</a>
+            <a href="">CGV</a>
+            <p style="font-size: 15px; margin: 10px;">&copy; 2025 OBtravel. Tous droits réservés.</p>    
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+</body>
+
+</html>
